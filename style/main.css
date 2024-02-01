@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+:root {
+    /* ------ Color Primary ------ */
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+
+    /* ------ Color Neutral ------ */
+    --white: hsl(0, 100%, 100%);
+
+    /* ------ Font ------ */
+    --font-regular: 400;
+    --font-bold: 600;
+    --font-open: 'Open Sans', sans-serif;
+    --font-poppis: 'Poppins', sans-serif;
+    /* --font-size: 16px; */
+
+    /* -------- Attribution -------- */
+    --color-attribution: 228, 45%, 44%;
+}
+
+/* ------ Principal ------ */
+body {
+    background: var(--violet);
+    /* font-size: var(--font-size); */
+    font-weight: var(--font-regular);
+    background-image: url(../images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: auto;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 725px;
+    width: 300px;
+}
+
+/* ------ Logo ------ */
+/* .logo{
+
+} */
+
+.logo .huddle {
+    /* display: flex;
+    align-items: flex-start;
+    justify-content: left; */
+    /* height: none; */
+    width: 120px;
+    position: relative;
+    margin-left: 0;
+}
+
+.logo .mockups {
+    height: 210px;
+    width: 300px;
+    margin-top: 60px;
+}
+
+/* ------ Text ------ */
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* align-content: center; */
+    justify-content: center;
+    color: var(--white);
+}
+
+.text h1 {
+    font-family: var(--font-poppis);
+    font-weight: var(--font-bold);
+    text-align: center;
+    font-size: 24px;
+    line-height: 36px;
+    margin-top: 60px;
+}
+
+.text p {
+    font-family: var(--font-open);
+    font-weight: var(--font-regular);
+    text-align: center;
+    line-height: 24px;
+    margin-top: 28px;
+    opacity: 0.9;
+}
+
+.text button {
+    height: 40px;
+    width: 200px;
+    font-size: 14px;
+    font-family: var(--font-poppis);
+    color: var(--violet);
+    border-radius: 50px;
+    border: none;
+    margin-top: 25px;
+}
+
+/* ------ Social ------ */
+.social{
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    gap: 10px;
+}
+
+.social img {
+    height: 30px;
+    width: 30px;
+}
+
+svg path {
+    fill: red;
+    
+}
+
+.social img svg:hover{
+    color: var(--soft-magenta);
+}
+
+/* .social .facebook,
+.twitter,
+.camera {
+} */
+
+/* -------- Attribution -------- */
+.attribution {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    bottom: 0.5rem;
+    font-size: 0.7rem;
+    color: black;
+}
+
+.attribution a {
+    color: hsl(var(--color-attribution));
+}
+
+/* ------ Responsivo ------ */
+/* @media only screen and (min-width: 650px) {
+
+} */

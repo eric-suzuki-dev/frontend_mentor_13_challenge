@@ -22,7 +22,6 @@
 /* ------ Principal ------ */
 body {
     background: var(--violet);
-    /* font-size: var(--font-size); */
     font-weight: var(--font-regular);
     background-image: url(../images/bg-mobile.svg);
     background-repeat: no-repeat;
@@ -48,15 +47,7 @@ main {
 }
 
 /* ------ Logo ------ */
-/* .logo{
-
-} */
-
 .logo .huddle {
-    /* display: flex;
-    align-items: flex-start;
-    justify-content: left; */
-    /* height: none; */
     width: 120px;
     position: relative;
     margin-left: 0;
@@ -73,7 +64,6 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* align-content: center; */
     justify-content: center;
     color: var(--white);
 }
@@ -115,24 +105,14 @@ main {
     gap: 10px;
 }
 
-.social img {
+.social svg {
     height: 30px;
     width: 30px;
 }
 
-svg path {
-    fill: red;
-    
+.social svg path{
+    fill: var(--white);
 }
-
-.social img svg:hover{
-    color: var(--soft-magenta);
-}
-
-/* .social .facebook,
-.twitter,
-.camera {
-} */
 
 /* -------- Attribution -------- */
 .attribution {

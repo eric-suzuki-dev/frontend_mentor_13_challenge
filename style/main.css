@@ -16,7 +16,7 @@
     /* --font-size: 16px; */
 
     /* -------- Attribution -------- */
-    --color-attribution: 228, 45%, 44%;
+    --color-attribution: hsl(207, 85%, 81%);
 }
 
 /* ------ Principal ------ */
@@ -61,11 +61,14 @@ main {
 
 /* ------ Text ------ */
 .text {
+    color: var(--white);
+}
+
+.text-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: var(--white);
 }
 
 .text h1 {
@@ -92,13 +95,15 @@ main {
     font-size: 14px;
     font-family: var(--font-poppis);
     color: var(--violet);
+    background-color: var(--white);
     border-radius: 50px;
     border: none;
     margin-top: 25px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 /* ------ Social ------ */
-.social{
+.social {
     display: flex;
     flex-direction: row;
     margin-top: 40px;
@@ -110,8 +115,20 @@ main {
     width: 30px;
 }
 
-.social svg path{
+.social svg path {
     fill: var(--white);
+}
+
+/* ------ hover ------ */
+.social div:hover svg path {
+    cursor: pointer;
+    fill: var(--soft-magenta);
+}
+
+.text button:hover {
+    color: var(--white);
+    background-color: var(--soft-magenta);
+    cursor: pointer;
 }
 
 /* -------- Attribution -------- */
@@ -127,10 +144,90 @@ main {
 }
 
 .attribution a {
-    color: hsl(var(--color-attribution));
+    color: var(--color-attribution);
 }
 
 /* ------ Responsivo ------ */
-/* @media only screen and (min-width: 650px) {
+@media only screen and (min-width: 1280px) {
 
-} */
+    /* ------ Principal ------ */
+    body {
+        background-image: url(../images/bg-desktop.svg);
+        background-size: cover;
+    }
+
+    .container {
+        flex-direction: row;
+        position: relative;
+        height: 710px;
+        width: 1280px;
+    }
+
+    /* ------ Logo ------ */
+    .logo {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        align-self: flex-start;
+    }
+
+    .logo .huddle {
+        width: 200px;
+    }
+
+    .logo .mockups {
+        height: 500px;
+        width: 700px;
+        margin-top: 100px;
+    }
+
+    /* ------ Text ------ */
+    .text {
+        flex: 1;
+    }
+
+    .text-container {
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 510px;
+        height: 340px;
+        align-self: flex-start;
+        margin-left: 60px;
+        margin-right: 20px;
+    }
+
+    .text h1 {
+        font-size: 38px;
+        text-align: left;
+        margin-top: 0;
+        line-height: 60px;
+    }
+
+    .text p {
+        margin-top: 0;
+        font-size: 18px;
+        text-align: left;
+        line-height: 30px;
+    }
+
+    .text button {
+        margin-top: 0;
+        height: 60px;
+        font-size: 16px;
+    }
+
+    /* ------ Social ------ */
+    .social {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        gap: 20px;
+    }
+
+    .social svg {
+        height: 40px;
+        width: 40px;
+    }
+}
